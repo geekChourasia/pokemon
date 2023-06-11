@@ -5,12 +5,12 @@ const app=express();
 
 app.use(cors())
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 const apiData=require("./data.json")
 
 app.get("/",(req,res)=>{
-    res.send("Hello I am Live");
+    res.send("Hello I am Live for pokemon API");
 });
 
 
@@ -19,7 +19,7 @@ app.get("/service",(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log("I am live again");
+    console.log("Hello I am Live for pokemon API");
 })
 
 
